@@ -7,13 +7,13 @@
 
 import SwiftUI
 @available(iOS 18.0, *)
-struct QuickActionButton: View {
+public struct QuickActionButton: View {
     enum Selection {
     case qrCode, scan
     }
     var selection: Selection = .scan
     var action: () -> Void
-    var body: some View {
+    public var body: some View {
         Button(action: action) {
             Image(systemName: selection == .qrCode ? "qrcode" : "qrcode.viewfinder")
                 .resizable()

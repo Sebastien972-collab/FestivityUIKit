@@ -8,10 +8,10 @@
 import SwiftUI
 
 @available(iOS 18.0, *)
-struct ConfirmationButtonView: View {
+public struct ConfirmationButtonView: View {
     var title: String
     var action: () -> Void
-    var body: some View {
+    public var body: some View {
         Button(action: action) {
             Text("Confirmer")
                 .padding()
