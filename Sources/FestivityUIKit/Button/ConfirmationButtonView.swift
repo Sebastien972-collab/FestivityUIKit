@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 18.0, *)
 struct ConfirmationButtonView: View {
     var title: String
     var action: () -> Void
@@ -21,7 +22,7 @@ struct ConfirmationButtonView: View {
         }
     }
 }
-
+@available(iOS 18.0, *)
 #Preview {
     ConfirmationButtonView(title: "cONFIRMER", action: {})
 }

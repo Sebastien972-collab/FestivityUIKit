@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+@available(iOS 18.0, *)
 extension Color {
     static var darkYellow: Color {
         Color(red: 236/255, green: 171/255, blue: 1/255)

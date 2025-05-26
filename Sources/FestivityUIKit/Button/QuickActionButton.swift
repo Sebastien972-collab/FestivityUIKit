@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+@available(iOS 18.0, *)
 struct QuickActionButton: View {
     enum Selection {
     case qrCode, scan
@@ -26,7 +26,7 @@ struct QuickActionButton: View {
         }
     }
 }
-
+@available(iOS 18.0, *)
 #Preview {
     HStack {
         QuickActionButton(selection: .scan, action: {})
