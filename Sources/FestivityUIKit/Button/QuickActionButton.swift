@@ -8,11 +8,12 @@
 import SwiftUI
 @available(iOS 18.0, *)
 public struct QuickActionButton: View {
-    enum Selection {
+    public enum Selection {
     case qrCode, scan
     }
-    var selection: Selection = .scan
-    var action: () -> Void
+    public var selection: Selection = .scan
+    public var action: () -> Void
+    @available(iOS 18.0, *)
     public var body: some View {
         Button(action: action) {
             Image(systemName: selection == .qrCode ? "qrcode" : "qrcode.viewfinder")

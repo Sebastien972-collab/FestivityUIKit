@@ -8,10 +8,11 @@
 import SwiftUI
 
 @available(iOS 18.0, *)
-struct PlusButton: View {
-    var action: () -> Void
-    @available(iOS 18.0, *)
-    var body: some View {
+struct PlusButton: View{
+    
+    public var action: () -> Void
+    
+    public var body: some View {
         Button(action: action) {
             Image(systemName: "plus")
                 .foregroundStyle(Color.darkYellow)
