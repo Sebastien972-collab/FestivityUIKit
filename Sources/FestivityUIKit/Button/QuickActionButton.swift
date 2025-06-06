@@ -13,6 +13,10 @@ public struct QuickActionButton: View {
     }
     public var selection: Selection = .scan
     public var action: () -> Void
+    public init(selection: Selection, action: @escaping () -> Void) {
+        self.selection = selection
+        self.action = action
+    }
     @available(iOS 18.0, *)
     public var body: some View {
         Button(action: action) {
