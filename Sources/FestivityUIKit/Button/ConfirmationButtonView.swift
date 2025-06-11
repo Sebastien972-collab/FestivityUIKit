@@ -17,7 +17,7 @@ public struct ConfirmationButtonView: View {
     }
     public var body: some View {
         Button(action: action) {
-            Text("Confirmer")
+            Text(title)
                 .padding()
                 .foregroundStyle(Color.coffe_brown)
                 .frame(maxWidth: 300, maxHeight: 40)
